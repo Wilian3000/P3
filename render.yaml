@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: usability-evaluator
+    env: docker
+    plan: free
+    region: oregon
