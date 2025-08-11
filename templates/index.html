@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<form id="eval-form" method="post" action="/api/evaluate" onsubmit="return submitForm(event)">
+  <label>HTML Code</label><br>
+  <textarea name="html" rows="10" cols="60"></textarea><br>
+  <button type="submit">Evaluate</button>
+</form>
+<div id="result"></div>
+<script src="/static/js/main.js"></script>
+{% endblock %}
